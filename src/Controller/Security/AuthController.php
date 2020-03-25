@@ -3,9 +3,7 @@
 namespace App\Controller\Security;
 
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
-use Symfony\Component\HttpFoundation\Request;
-use Symfony\Component\HttpFoundation\Response;
-use Symfony\Component\HttpFoundation\JsonResponse;
+use Symfony\Component\HttpFoundation\{Request, Response, JsonResponse};
 use App\Service\User\UserManager;
 use Symfony\Component\Routing\Annotation\Route;
 
