@@ -72,4 +72,15 @@ class Team
 
         return $this;
     }
+    /**
+     * @return array
+     */
+    public function toArray(): array
+    {
+        return [
+            "name" => $this->name,
+            "strip" => $this->strip,
+            "league" => $this->league->getName()
+        ];
+    } 
 }

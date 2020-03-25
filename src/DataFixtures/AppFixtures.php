@@ -56,9 +56,7 @@ class AppFixtures extends Fixture
 
     public function load(ObjectManager $manager)
     {   
-
         foreach ($this->teams as $name => $data) {
-  
             $leagueName = $data["league"];
             $league = ! empty($this->leagues[$leagueName]) ? $this->leagues[$leagueName] : null;
             if (! $league instanceof League) {

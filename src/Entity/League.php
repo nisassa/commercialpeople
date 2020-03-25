@@ -80,4 +80,21 @@ class League
 
         return $this;
     }
+
+    /**
+     * @return array
+     */
+    public function toArray(): array
+    {   
+        $teams = [];
+        
+        foreach ($this->teams as $team) {
+            $teams[] = $team->toArray();
+        }
+
+        return [
+            "name" => $this->name,
+            "teams" => $teams
+        ];
+    }
 }
