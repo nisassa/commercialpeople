@@ -70,6 +70,16 @@ class TeamManager
     }
 
     /**
+     * Delete Team
+     * @param Team $team
+     */
+    public function delete(Team $team)
+    {
+        $this->em->remove($team);
+        $this->em->flush();
+    }
+
+    /**
      * persist 
      * @param Team $team
      * @return null
