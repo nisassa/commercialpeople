@@ -72,6 +72,7 @@ class Team
 
         return $this;
     }
+    
     /**
      * @return array
      */

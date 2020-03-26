@@ -20,7 +20,6 @@ class LeagueManager
         $this->em = $em;
     }
     
-
     /**
      * Get league entity by id
      * 
